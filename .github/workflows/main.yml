@@ -1,0 +1,15 @@
+
+
+name: secrets fetching from zvAction
+on : push
+jobs: 
+  retrive_secrets:
+  
+    uses: naveennv2k/ZVSecretsLoading/.github/workflows/action.yml@main
+    
+        
+  
+ 
+   
+  
+  
