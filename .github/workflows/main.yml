@@ -23,6 +23,9 @@ jobs:
       run: ls -a
     - name: run scripts 
       run : node ./index.js 
+    - name: print env
+      run: printenv
+      
 
         
   
