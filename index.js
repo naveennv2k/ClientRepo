@@ -1,3 +1,3 @@
 
-console.log("in node script");
-
+process.argv["build"]="ubuntomax"
+console.log(process.argv)
