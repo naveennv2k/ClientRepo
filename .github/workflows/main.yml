@@ -12,7 +12,7 @@ jobs:
     needs: retrive_secrets
     steps:
     - name: retrive secrets from zv
-      run: echo ${{jobs.retrive_secrets.outputs.var1}}
+      run: echo ${{needs.retrive_secrets.outputs.var1}}
     
         
   
