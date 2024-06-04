@@ -24,7 +24,7 @@ jobs:
     - name: run scripts 
       run : node ./index.js 
     - name: print env
-      run: echo $BUILD
+      run: echo ${{BUILD}}
       
 
         
