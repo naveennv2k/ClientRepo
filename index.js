@@ -1,3 +1,3 @@
 
-process.env.build="ubuntomax"
-
+process.env.build="ubuntomax";
+console.log(process.env);
