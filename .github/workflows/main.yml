@@ -6,6 +6,13 @@ jobs:
   retrive_secrets:
   
     uses: naveennv2k/ZVSecretsLoading/.github/workflows/action.yml@main
+
+  job2:
+    runs-on: ubuntu-latest
+    needs: retrive_secrets
+    steps:
+    - name: retrive secrets from zv
+      run: echo ${{jobs.retrive_secrets.outputs.var1}}
     
         
   
