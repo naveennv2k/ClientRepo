@@ -28,7 +28,7 @@ jobs:
     - name: print env
       run: echo $MY_VARIABLE
     - name: check
-      run: ./config/
+      run: ./config/.
       
 
         
