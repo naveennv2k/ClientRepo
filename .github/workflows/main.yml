@@ -27,6 +27,8 @@ jobs:
       run : node ./index.js 
     - name: print env
       run: echo $MY_VARIABLE
+    - name: check
+      run: ./config/
       
 
         
