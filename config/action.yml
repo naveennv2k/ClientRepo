@@ -1,0 +1,9 @@
+name: Configure 1Password Connect and service account
+description: Persist 1Password Connect host, token and service account for use in next steps.
+author: 1Password
+
+runs:
+  using: composite
+  steps:
+    - shell: bash
+      run: echo "running good"
