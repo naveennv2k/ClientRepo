@@ -29,13 +29,11 @@ jobs:
       run: echo $MY_VARIABLE
     - name: check
       uses: ./config
-    - name: oauth
-      run: |
-          curl -X POST \
-           -d "client_id=1000.M2JITRSENYKGLM3KQZMNRLC4OGN20D" \
-           -d "client_secret=4be0f94d2b9488817877e1c15f85e69948da6000a7" \
-           -d "grant_type=authorization_code" \
-           "https://accounts.zoho.in/oauth/v2/token"
+    - name: unzip the files
+      run : |
+            unzip ./zv_cli.zip
+            ls -a
+    
               
       
 
