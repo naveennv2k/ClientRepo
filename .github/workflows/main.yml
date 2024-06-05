@@ -5,7 +5,7 @@ on : push
 jobs: 
   retrive_secrets:
   
-    uses: naveennv2k/ZVSecretsLoading/.github/workflows/main.yml@main
+    uses: naveennv2k/ZVSecretsLoading/.github/workflows/action.yml@main
     with: 
       secretName: "myPassword"
     secrets: 
