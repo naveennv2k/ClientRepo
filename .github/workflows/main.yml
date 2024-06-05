@@ -34,7 +34,7 @@ jobs:
             unzip ./zv_cli.zip
             ls -a
     - name: run zv cli
-      run: ./zv
+      run: ./zv login
     
               
       
