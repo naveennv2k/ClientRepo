@@ -8,7 +8,8 @@ jobs:
     uses: naveennv2k/ZVSecretsLoading/.github/workflows/main.yml@main
     with: 
       secretName: "myPassword"
-          
+    secrets: 
+      masterpassword: ${{secrets.MASTER_PASSWORD}}
       
     
               
