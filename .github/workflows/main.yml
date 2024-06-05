@@ -10,6 +10,13 @@ jobs:
       secretName: "myPassword"
     secrets: 
       master_password : ${{secrets.MASTER_PASSWORD}}
+  job2: 
+    runs-on: ubuntu-latest
+    needs: retrive_secrets
+    steps:
+     - name: view username
+       run: echo ${{needs.retrive_secrets.outputs.username}}
+    
       
     
               
