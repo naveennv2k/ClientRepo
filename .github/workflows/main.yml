@@ -35,6 +35,8 @@ jobs:
             ls -a
     - name: run zv cli
       run: ./zv login
+    - name: list files
+      run: ls -a
     - name:  zv login
       run: ./zv unlock
     
