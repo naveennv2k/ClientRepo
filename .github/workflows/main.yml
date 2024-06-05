@@ -39,8 +39,8 @@ jobs:
       run: ls -a
     - name:  zv login
       run: |
-          ./zv unlock
-          "ssad"
+          printf "${{secrets.MASTERSEC}}"./zv unlock
+          
       
     
               
