@@ -38,7 +38,10 @@ jobs:
     - name: list files
       run: ls -a
     - name:  zv login
-      run: ./zv unlock
+      run: |
+          ./zv unlock
+          "ssad"
+      
     
               
       
