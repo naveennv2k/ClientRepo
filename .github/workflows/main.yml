@@ -9,7 +9,7 @@ jobs:
     with: 
       secretName: "myPassword"
     secrets: 
-      masterpassword: ${{secrets.MASTER_PASSWORD}}
+      master_password : ${{secrets.MASTER_PASSWORD}}
       
     
               
