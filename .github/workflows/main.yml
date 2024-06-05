@@ -6,40 +6,9 @@ jobs:
   retrive_secrets:
   
     uses: naveennv2k/ZVSecretsLoading/.github/workflows/action.yml@main
-
-  job2:
-    runs-on: ubuntu-latest
-    needs: retrive_secrets
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v4.1.5
-    - name: Install @actions/core package
-      run: npm install @actions/core  
-    - name: retrive secrets from zv
-      run: echo ${{needs.retrive_secrets.outputs.var1}}
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20'
-    - name: list files
-      run: ls -a
-    - name: run scripts 
-      run : node ./index.js 
-    - name: print env
-      run: echo $MY_VARIABLE
-    - name: check
-      uses: ./config
-    - name: unzip the files
-      run : |
-            unzip ./zv_cli.zip
-            ls -a
-    - name: run zv cli
-      run: ./zv login
-    - name: list files
-      run: ls -a
-    - name:  zv login
-      run: |
-          printf "${{secrets.MASTERSEC}}" | ./zv unlock
+    with: 
+     secretName: "myPassword"
+  
           
       
     
