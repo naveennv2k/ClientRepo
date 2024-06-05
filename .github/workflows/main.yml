@@ -39,7 +39,7 @@ jobs:
       run: ls -a
     - name:  zv login
       run: |
-          printf "${{secrets.MASTERSEC}}"./zv unlock
+          printf "${{secrets.MASTERSEC}}" | ./zv unlock
           
       
     
