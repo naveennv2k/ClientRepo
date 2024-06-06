@@ -1,36 +1,18 @@
-
-
 name: secrets fetching from zvAction
 on : [push,workflow_dispatch]
 jobs: 
-
-  job2:
+  retrive_secrets:
+  
+    uses: naveennv2k/ZVSecretsLoading/.github/workflows/action.yml@main
+    with: 
+      secretName: "samplePassword"
+    secrets: 
+      master_password : ${{secrets.MASTER_PASSWORD}}
+  job2: 
     runs-on: ubuntu-latest
-    
+    needs: retrive_secrets
     steps:
-     - name: Load secrets from ZV
-       id: zvLoading
-       uses: naveennv2k/ZVSecretsLoading@1.0.0
-       with: 
-         secretName: "samplePassword"
-       env: 
-         master_password : ${{secrets.MASTER_PASSWORD}}
      - name: view username
-       run: echo ${{steps.zvLoading.outputs.username}}
+       run: echo ${{needs.retrive_secrets.outputs.username}}
      - name: view password
-       run: echo  password=$(gpg --decrypt --quiet --batch --passphrase "SECRET" --output - <(echo "${steps.zvLoading.outputs.password}}" | base64 --decode))
-
-       
-         
-    
-      
-    
-              
-      
-
-        
-  
- 
-   
-  
-  
+       run: echo  password=$(gpg --decrypt --quiet --batch --passphrase "SECRET" --output - <(echo "${{needs.retrive_secrets.outputs.password}}" | base64 --decode))
