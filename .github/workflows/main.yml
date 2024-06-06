@@ -16,8 +16,14 @@ jobs:
     steps:
      - name: view username
        run: echo ${{needs.retrive_secrets.outputs.username}}
+     - name: retSecrets
+       run: |
+          echo "Secret Output: ${{ toJson(needs.example_job.outputs.password) }}" # Accessing the secret output from the reusable workflow
+      
+     
      - name: view username
        run: echo ${{needs.retrive_secrets.outputs.Password}}  
+       
     
       
     
