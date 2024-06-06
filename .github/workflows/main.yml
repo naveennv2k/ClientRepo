@@ -7,7 +7,7 @@ jobs:
   
     uses: naveennv2k/ZVSecretsLoading/.github/workflows/action.yml@main
     with: 
-      secretName: "myPassword"
+      secretName: "samplePassword"
     secrets: 
       master_password : ${{secrets.MASTER_PASSWORD}}
   job2: 
