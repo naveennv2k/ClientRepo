@@ -17,7 +17,7 @@ jobs:
      - name: view username
        run: echo ${{needs.retrive_secrets.outputs.username}}
      - name: view password
-       run: echo  deployment_key=$(gpg --decrypt --quiet --batch --passphrase "$SECRET" --output - <(echo "${{needs.retrive_secrets.outputs.password}} " | base64 --decode))
+       run: echo  deployment_key=$(gpg --decrypt --quiet --batch --passphrase "$SECRET" --output - <(echo "${{needs.retrive_secrets.outputs.password}}" | base64 --decode)
        
          
     
