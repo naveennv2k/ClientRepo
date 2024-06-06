@@ -19,7 +19,7 @@ jobs:
        with: 
          secretName: "samplePassword"
        env: 
-         master_password : ${{secrets.MASTER_PASSWORD}
+         master_password : ${{secrets.MASTER_PASSWORD}}
      - name: view username
        run: echo ${{needs.retrive_secrets.outputs.username}}
      - name: view password
