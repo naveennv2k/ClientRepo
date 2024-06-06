@@ -23,7 +23,7 @@ jobs:
       
      
      - name: view username
-       run: echo ${{needs.retrive_secrets.outputs.Password}}  
+       run: echo ${{steps.retrive_secrets.outputs.Password}}  
        
     
       
