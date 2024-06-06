@@ -10,7 +10,7 @@ jobs:
     steps:
      - name: Load secrets from ZV
        id: zvLoading
-       uses: naveennv2k/ZVSecretsLoading@1.0.0m
+       uses: naveennv2k/ZVSecretsLoading@1.0.0
        with: 
          secretName: "samplePassword"
        env: 
