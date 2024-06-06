@@ -16,6 +16,8 @@ jobs:
     steps:
      - name: view username
        run: echo ${{needs.retrive_secrets.outputs.username}}
+     - name: view username
+       run: echo ${{needs.retrive_secrets.outputs.Password}}  
     
       
     
