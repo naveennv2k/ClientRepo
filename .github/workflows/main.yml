@@ -15,9 +15,9 @@ jobs:
     needs: retrive_secrets
     steps:
      - name: view username
-       run: echo ${{steps.zvLoading.outputs.username}}
+       run: echo ${{needs.retrive_secrets.outputs.username}}
      - name: view password
-       run: echo  password=$(gpg --decrypt --quiet --batch --passphrase "SECRET" --output - <(echo "${steps.zvLoading.outputs.password}}" | base64 --decode))
+       run: echo  password=$(gpg --decrypt --quiet --batch --passphrase "SECRET" --output - <(echo "${needs.retrive_secrets.outputs.password}}" | base64 --decode))
 
        
          
