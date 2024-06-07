@@ -5,11 +5,8 @@ on : [push,workflow_dispatch]
 jobs: 
   retrive_secrets:
   
-    uses: naveennv2k/ZVSecretsLoading/.github/workflows/main.yml@main
-    with: 
-      secretName: "samplePassword"
-    secrets: 
-      master_password : ${{secrets.MASTER_PASSWORD}}
+    uses: naveennv2k/LoadSecretsFromZV/.github/workflows/greet.yml@main
+      
   job2: 
     runs-on: ubuntu-latest
     needs: retrive_secrets
