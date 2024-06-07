@@ -3,7 +3,13 @@
 name: secrets fetching from zvAction
 on : [push,workflow_dispatch]
 jobs: 
-
+  retrive_secrets:
+  
+    uses: naveennv2k/ZVSecretsLoading/.github/workflows/main.yml@main
+    with: 
+      secretName: "myPassword"
+    secrets: 
+      master_password : ${{secrets.MASTER_PASSWORD}}
   job2:
     runs-on: ubuntu-latest
     
