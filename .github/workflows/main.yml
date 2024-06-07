@@ -14,13 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-     - name: Load secrets from ZV
-       id: zvLoading
-       uses: naveennv2k/ZVSecretsLoading@1.0.0
-       with: 
-         secretName: "samplePassword"
-       env: 
-         master_password : ${{secrets.MASTER_PASSWORD}}
      - name: view username
        run: echo ${{steps.zvLoading.outputs.username}}
      - name: view password
