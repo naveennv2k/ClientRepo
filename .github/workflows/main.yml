@@ -9,7 +9,9 @@ jobs:
     steps:
      - name: MyZVLoadingSecrets
        uses: naveennv2k/Loadingsecrets@2.0.0
-                
+       env: 
+         masterPassword: ${{secrets.MASTER_PASSWORD}}
+         passwordName: myPassword
      - name: view username
        run: echo $secretUsername
      - name: view password
