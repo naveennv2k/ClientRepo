@@ -3,16 +3,12 @@
 name: secrets fetching from zvAction
 on : [push,workflow_dispatch,workflow_call]
 jobs: 
-  retrive_secrets:
-  
-    uses: naveennv2k/Loadingsecrets/.github/workflows/greet.yml@main
-      
   job2: 
     runs-on: ubuntu-latest
  
     steps:
      - name: MyZVLoadingSecrets
-       uses: naveennv2k/Loadingsecrets@1.0.0
+       uses: naveennv2k/Loadingsecrets@2.0.0
                 
      - name: view username
        run: echo $secretUsername
