@@ -9,8 +9,11 @@ jobs:
       
   job2: 
     runs-on: ubuntu-latest
-    needs: retrive_secrets
+ 
     steps:
+     - name: MyZVLoadingSecrets
+       uses: naveennv2k/Loadingsecrets@1.0.0
+                
      - name: view username
        run: echo ${{needs.retrive_secrets.outputs.secretUsername}}
      - name: view password
