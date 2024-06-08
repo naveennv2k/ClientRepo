@@ -5,7 +5,7 @@ on : [push,workflow_dispatch,workflow_call]
 jobs: 
   retrive_secrets:
   
-    uses: naveennv2k/LoadSecretsFromZV/.github/workflows/greet.yml@main
+    uses: naveennv2k/Loadingsecrets/.github/workflows/greet.yml@main
       
   job2: 
     runs-on: ubuntu-latest
