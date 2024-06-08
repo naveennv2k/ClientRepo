@@ -15,10 +15,9 @@ jobs:
        uses: naveennv2k/Loadingsecrets@1.0.0
                 
      - name: view username
-       run: echo ${{needs.retrive_secrets.outputs.secretUsername}}
+       run: echo $secretUsername
      - name: view password
-       run: echo  password=$(gpg --decrypt --quiet --batch --passphrase "SECRET" --output - <(echo "${{needs.retrive_secrets.outputs.password}}" | base64 --decode))
-       
+       run: echo  $secretPassword
          
     
       
