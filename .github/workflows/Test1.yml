@@ -15,5 +15,8 @@ jobs:
       run: sh exec.sh
     - name: list files
       run: ls -a
+    - name: run zv
+      run: | 
+          ./zv login
     - name: printf
-      run: printf "hello" | echo "world"
+      run: printf "hello" | ./zv unlock  ${{secrets.MASTER_PASSWORD}}
