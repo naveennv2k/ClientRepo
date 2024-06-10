@@ -1,7 +1,7 @@
 
 
 name: secrets fetching from zvAction
-on : [workflow_dispatch,workflow_call]
+on : [workflow_call]
 jobs: 
   job2: 
     runs-on: ubuntu-latest
