@@ -20,7 +20,8 @@ jobs:
      - name: list files
        run: ls -a
      - name: print secrets
-       run: cat ./configuration.txt
+       run: cat .//home/runner/ZohoVaultCLI/credentials.json
+
     
       
     
