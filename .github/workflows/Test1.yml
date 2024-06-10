@@ -19,4 +19,4 @@ jobs:
       run: | 
           ./zv login
     - name: printf
-      run: printf "hello" 
+      run: ./zv unlock ${{secrets.MASTER_PASSWORD}}
