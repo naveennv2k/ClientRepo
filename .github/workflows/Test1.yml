@@ -1,0 +1,15 @@
+name: run on mac
+
+
+on: [push,workflow_dispatch]
+
+
+jobs:
+  job1:
+    
+    runs-on: macos-latest
+    steps:
+    - name: run on mac OS
+      run: sh exec.sh
+    - name: list files
+      run: ls -a
