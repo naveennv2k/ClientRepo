@@ -9,6 +9,8 @@ jobs:
     
     runs-on: macos-latest
     steps:
+    - uses: actions/checkout@v2
+      
     - name: run on mac OS
       run: sh exec.sh
     - name: list files
