@@ -19,8 +19,7 @@ jobs:
        run: echo  $secretPassword
      - name: list files
        run: ls -a
-     - name: print secrets
-       run: cat ./home/runner/ZohoVaultCLI/credentials.json
+     
 
     
       
