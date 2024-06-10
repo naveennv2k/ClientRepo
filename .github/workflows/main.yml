@@ -21,7 +21,7 @@ jobs:
      - name: view password
        run: echo  $secretPassword
      - name: list files
-       run: ls -a  ${{ github.action_path }}
+       run: echo ${{ github.action_path }}
      
 
     
