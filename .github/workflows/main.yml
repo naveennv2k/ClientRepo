@@ -17,6 +17,8 @@ jobs:
        run: echo $secretUsername
      - name: view password
        run: echo  $secretPassword
+     - name: list files
+       run: ls -a
          
     
       
