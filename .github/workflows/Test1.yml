@@ -9,9 +9,7 @@ jobs:
     
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
-    - run: dir 
-    - name: run on windows
-      run: exec.bat
+    - name: TestChecker2023
+      uses: naveennv2k/Test1@1.0.0
   
    
