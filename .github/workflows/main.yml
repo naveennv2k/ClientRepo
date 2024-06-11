@@ -7,10 +7,11 @@ jobs:
     runs-on: windows-latest
  
     steps:
-      -name: install
-       run:|
-           npm install @actions/core
-           npm install @actions/exec
+     - name: install
+       run: |
+            npm install @actions/core
+            npm install @actions/exec
+     
      - name: MyZVLoadingSecrets
        uses: naveennv2k/Loadingsecrets@3.0.0
 
