@@ -4,12 +4,12 @@ name: secrets fetching from zvAction
 on : [workflow_dispatch,workflow_call]
 jobs: 
   job2: 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
  
     steps:
       
      - name: MyZVLoadingSecrets
-       uses: naveennv2k/Loadingsecrets@2.0.0
+       uses: naveennv2k/Loadingsecrets@3.0.0
 
        env: 
          masterPassword: ${{secrets.MASTER_PASSWORD}}
