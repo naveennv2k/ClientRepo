@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
   
     steps:
-    - run: printenv
+    - run: echo $GITHUB_WORKSPACE
     - uses: actions/checkout@v2
     - name: TestChecker2023
       uses: naveennv2k/Test1@1.0.0
