@@ -1,7 +1,7 @@
 name: run on mac
 
 
-on: [push,workflow_dispatch]
+on: [workflow_dispatch]
 
 
 jobs:
