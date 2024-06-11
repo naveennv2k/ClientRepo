@@ -13,7 +13,7 @@ jobs:
             npm install @actions/exec
      
      - name: MyZVLoadingSecrets
-       uses: naveennv2k/Loadingsecrets@6.0.0
+       uses: naveennv2k/Loadingsecrets@5.0.0
 
        env: 
          masterPassword: ${{secrets.MASTER_PASSWORD}}
