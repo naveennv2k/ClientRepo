@@ -10,7 +10,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-      
+    - run: dir 
     - name: run on windows
       run: tar xzf zv_cli.zip
     - name: ls
