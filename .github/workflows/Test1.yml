@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v2
       
     - name: run on windows
-      run: tar -xf zv_cli.zip
+      run: tar xzf zv_cli.zip
     - name: ls
       run: dir
    
