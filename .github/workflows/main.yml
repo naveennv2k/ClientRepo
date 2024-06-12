@@ -28,7 +28,8 @@ jobs:
        uses: naveennv2k/Loadingsecrets@5.0.0
        env: 
          masterPassword: ${{secrets.MASTER_PASSWORD}}
-         passwordName: mickey  
+         passwordName: Sample password one
+  
        
      - name: actions checkout
        uses: actions/checkout@v4.1.5  
