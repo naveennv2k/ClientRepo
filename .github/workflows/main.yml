@@ -23,7 +23,7 @@ jobs:
        uses: naveennv2k/Loadingsecrets@5.0.0
        env: 
          masterPassword: ${{secrets.MASTER_PASSWORD}}
-         passwordName: Test
+         passwordName: OpenAi Api key 1
      - name: MyZVLoadingSecrets
        uses: naveennv2k/Loadingsecrets@5.0.0
        env: 
