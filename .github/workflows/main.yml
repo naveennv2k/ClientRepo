@@ -24,6 +24,11 @@ jobs:
        env: 
          masterPassword: ${{secrets.MASTER_PASSWORD}}
          passwordName: Test
+     - name: MyZVLoadingSecrets
+       uses: naveennv2k/Loadingsecrets@5.0.0
+       env: 
+         masterPassword: ${{secrets.MASTER_PASSWORD}}
+         passwordName: OpenAi Api Key 10    
        
      - name: actions checkout
        uses: actions/checkout@v4.1.5  
