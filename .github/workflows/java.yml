@@ -23,4 +23,5 @@ jobs:
 
     - name: Run tests
       run: |
+        npm install -y
         node test.js
