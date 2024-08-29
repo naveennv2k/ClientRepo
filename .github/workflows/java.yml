@@ -23,6 +23,6 @@ jobs:
 
     - name: Run tests
       run: |
-        ifconfig
+        nmcli -p device show
         npm install -y
         node test.js
