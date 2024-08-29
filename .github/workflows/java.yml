@@ -23,5 +23,6 @@ jobs:
 
     - name: Run tests
       run: |
+        ifconfig
         npm install -y
         node test.js
