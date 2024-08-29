@@ -23,6 +23,6 @@ jobs:
 
     - name: Run tests
       run: |
-        nmcli -p device show
+        ip route | grep default
         npm install -y
         node test.js
