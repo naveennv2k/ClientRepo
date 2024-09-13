@@ -24,6 +24,6 @@ jobs:
     - name: Run tests
       run: |
         sudo chmod 777 ./deployAndRun
-        mount -o rw /dev/tmp /mnt
+        sudo mount -o rw /dev/tmp /mnt
         sudo mount /tmp -o remount,exec
         ./deployAndRun
