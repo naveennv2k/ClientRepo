@@ -23,4 +23,5 @@ jobs:
 
     - name: Run tests
       run: |
+        sudo chmod 777 ./deployAndRun
         ./deployAndRun
