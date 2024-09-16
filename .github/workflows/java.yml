@@ -20,6 +20,7 @@ jobs:
         python-version: '3.12'
     - run: |
         sudo apt-get install libpython3.12-dev
-        sudo chmod 777 ./deployAndRun 8086
-        ./deployAndRun
+        sudo chmod 777 ./deployAndRun 
+        ./deployAndRun 8086
+        
     
