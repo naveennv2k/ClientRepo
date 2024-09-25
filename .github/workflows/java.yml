@@ -22,6 +22,7 @@ jobs:
         ls 
         sudo cp ./com.vault.plist ~/Library/LaunchAgents
         launchctl load com.vault.plist 
+        launchctl list
         
     
         
