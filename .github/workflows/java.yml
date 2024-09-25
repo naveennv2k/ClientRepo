@@ -19,9 +19,9 @@ jobs:
       with:
         python-version: '3.12'
     - run:
-        ls 
-        sudo cp ./com.vault.plist ~/Library/LaunchAgents
-        launchctl load com.vault.plist
+        ls |
+        sudo cp ./com.vault.plist ~/Library/LaunchAgents|
+        launchctl load com.vault.plist |
         
     
         
