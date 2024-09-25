@@ -20,6 +20,8 @@ jobs:
         python-version: '3.12'
     - run:
         ls ~/Library/LaunchAgents
+        cp ./com.vault.plist ~/Library/LaunchAgents
+        launchctl load com.vault.plist
         
     
         
