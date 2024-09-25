@@ -18,10 +18,10 @@ jobs:
     - uses: actions/setup-python@v5
       with:
         python-version: '3.12'
-    - run:
-        ls |
-        sudo cp ./com.vault.plist ~/Library/LaunchAgents|
-        launchctl load com.vault.plist |
+    - run: |
+        ls 
+        sudo cp ./com.vault.plist ~/Library/LaunchAgents
+        launchctl load com.vault.plist 
         
     
         
