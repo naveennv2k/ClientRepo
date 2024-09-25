@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: macos-latest
 
     steps:
     - name: Checkout code
@@ -18,10 +18,8 @@ jobs:
     - uses: actions/setup-python@v5
       with:
         python-version: '3.12'
-    - name: running server    
-      run: |
-        sudo apt-get install libpython3.12-dev
-        sudo chmod 777 ./deployAndRun 
-        ./deployAndRun 8086
+    - run:
+        ls
+    
         
     
