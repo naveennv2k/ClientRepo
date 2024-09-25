@@ -6,7 +6,7 @@
 		<string>com.vault</string>
 		<key>ProgramArguments</key>
 		<array>
-			<string>/usr/local/bin/zv</string>
+			<string>ls</string>
 		</array>
 		<key>StartInterval</key>
 		<integer>20</integer>
